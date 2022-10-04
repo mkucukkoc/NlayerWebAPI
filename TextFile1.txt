@@ -1,0 +1,40 @@
+Task Nedir?
+Task tipi en basit anlat?mla asenkron(async) operasyonu temsil eden bir tip.Bu tipi kullanarak asenkron
+operasyonla ilgili tüm detaylara eri?ebilmemiz mümkün.
+
+async ve await nedir?
+async; içerisinde asenkron i?lem yap?lacak metodu belirtir. Benzer ifadeyle, içerisinde asenkron i?lem yapaca??m?z metodu async keywordü ile i?aretlemeliyiz.
+Yukar?daki örnekte gördü?ünüz gibi olaylarda(event) dahil olmak üzere içerisinde asenkron i?lem yap?lacak tüm metodlar async ile i?aretlenmek zorundad?r.
+asnyc ile i?aretlenmi? bir metodda asenkron çal??acak komutlar await ile i?aretlenir.
+async ile i?aretlenmi? metodun geri dönü? tipi; void, Task veyahut Task<T> geri dönü? tiplerinde olmal?d?r.
+await; sadece async ile i?aretlenmi? metodlarda kullan?labilir.
+async ile i?aretlenmi? bir metod birden fazla await kullanabilir.
+
+IQuaryable Nedir ve IEnumareable ile fark? nedir?
+IQueryable veri taban?ndan verileri geni? kapsaml? sorgulamak için kullan?l?r.
+IQueryable arayüzü IEnumarable arayüzünü implement etmektedir. 
+Bu sayede IQuaryable IEnumarable özelliklerinin hepsini bar?nd?racakt?r.
+IQueryable kullan?ld???nda sorgu al?n?rken öncelikle filtrelendirme yap?l?p sorgu gönderilir. 
+Bu konuda performans bak?m?ndan çok iyidir. Örne?in a?a??daki koddaki gibi Ürünler tablosundaki 
+ürünlerin fiyat? 30 ‘dan büyük ve fiyat? 70’ den küçük olanlar?n? listeleyip gönderecektir. 
+IEnumarable kullansayd?k e?er, önce listeleyip ondan sonra o liste üzerinde filtrelendirme yap?p döndürecekti
+bize bu da performans kayb? ya?atacakt?r.
+
+DTOs Nedir?
+DTOs ve AutoMapper, projemizde Entity nesnelerini database’den çekti?imiz haliyle de?il,
+bu nesneleri istedi?imiz (UI’da bizim için gerekli olacak) formata çevirmemizi sa?layan basit bir kütüphanedir.
+
+Mapping ve Profile Nedir?
+Mapping ile DTOs da olu?turdugumuz s?n?flar? ve models dosyas?n?n içinde olanalar? e?le?tiriyoruz.Bu i?lem bize kullan?c?
+göstermek istedi?imiz yerleri gösteriyor.
+Profile s?n?flar? isee?le?tirmemizi sa?layan bir s?n?ft?r.
+
+CustomeResponseDto nedir?
+DTOs lar bize kullan?c?ya dönmek isteedi?imiz tabalolar veya ba?ar?l? veya ba?ar?s?z durumlar? dönmek için kullan?r?z.
+Custome response ise bizim projemizde Api k?sm? için olumlu ve olumsuz durumlar? dönmek için kullan?r?z.
+Bu durumlar Success,Warning gibi ks??mlar
+Örnek ise api için bir istekde bulunduk ve bu istek bulunamad? i?te bu k?s?m için kullanabilirz.
+
+[JsonIgnore] Nedir?
+Bu özelli?i StatusCode için CustomResponseDto s?n?f?nda kulland?k.Bu özellik bize JSON verisinde gözükmesi 
+istenmeyen anahtarlar özel olarak belirtmek istenirse kullan?l?r.

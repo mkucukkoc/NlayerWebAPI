@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "nG65ZqQ+m5o8iO6cYswY3Ivr+cpEVizoDLAo16QFRH3k4PUR6az4jF21jowJBQzPC0wBhw/Pb2uOgPsppgpCug==",
+  "dgSpecHash": "c32Ly6SaLoXQnePAxM04vW6SdTUJvZkadKzWH3PV881mDw6fdRKQtyKAzIKQ4grZg7HYOjNyyXBhI23bN/ok0Q==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\NlayerWebAPI\\NLayerWeb\\NLayerWeb.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.4\\microsoft.entityframeworkcore.analyzers.6.0.4.nupkg.sha512",

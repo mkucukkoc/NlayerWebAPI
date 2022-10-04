@@ -3,17 +3,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32901.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NlayerAPI", "NlayerAPI\NlayerAPI.csproj", "{47E5ABB0-71D2-4258-BF98-84C10F351E65}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NlayerAPI", "NlayerAPI\NlayerAPI.csproj", "{47E5ABB0-71D2-4258-BF98-84C10F351E65}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerWeb", "NLayerWeb\NLayerWeb.csproj", "{B46FD81A-9999-4878-B175-B584CE5FD371}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerWeb", "NLayerWeb\NLayerWeb.csproj", "{B46FD81A-9999-4878-B175-B584CE5FD371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerCore", "NLayerCore\NLayerCore.csproj", "{A4648D43-6F58-465A-BDCF-0C1B4CDC8718}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerCore", "NLayerCore\NLayerCore.csproj", "{A4648D43-6F58-465A-BDCF-0C1B4CDC8718}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerRepository", "NLayerRepository\NLayerRepository.csproj", "{07829F45-AC6C-49A7-A344-14A6E23B5BFA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerRepository", "NLayerRepository\NLayerRepository.csproj", "{07829F45-AC6C-49A7-A344-14A6E23B5BFA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerService", "NLayerService\NLayerService.csproj", "{C600A031-0087-4871-8714-3DCF522062AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerService", "NLayerService\NLayerService.csproj", "{C600A031-0087-4871-8714-3DCF522062AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLayerCaching", "NLayerCaching\NLayerCaching.csproj", "{2697065F-0789-4D2C-96C4-E08F4914AF05}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NLayerCaching", "NLayerCaching\NLayerCaching.csproj", "{2697065F-0789-4D2C-96C4-E08F4914AF05}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Notes", "Notes", "{3240CE74-6730-462D-BD48-6BA67ED957C6}"
+	ProjectSection(SolutionItems) = preProject
+		TextFile1.txt = TextFile1.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

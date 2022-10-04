@@ -11,8 +11,8 @@ namespace NLayerCore.Servicess
      Task<bool> AnyAsync(Expression<Func<T,bool>> expression);
      Task<T> AddAsync(T entity);
      Task<IEnumerable<T>> AddRangeAsync(IEnumerable<T> entities);
-     void Update(T entity);
-     void Remove(T entity);
-     void RemoveRange(IEnumerable<T>entities); 
+     Task Update(T entity);
+     Task Remove(T entity);
+     Task RemoveRange(IEnumerable<T>entities); 
     }
 }

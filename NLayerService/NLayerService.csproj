@@ -7,7 +7,20 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Services\Service.cs~RF1720a58.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\NLayerRepository\NLayerRepository.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Exception\" />
+    <Folder Include="Validations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.0" />
   </ItemGroup>
 
 </Project>

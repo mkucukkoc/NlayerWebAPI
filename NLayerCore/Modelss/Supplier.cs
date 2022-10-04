@@ -10,5 +10,6 @@ namespace NLayerCore.Modelss
         public string Email { get; set; }
         public ICollection<Product> Products { get; set; }
 
+
     }
 }

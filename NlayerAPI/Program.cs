@@ -1,10 +1,14 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayerCore.Repositories;
+using NLayerCore.Servicess;
 using NLayerCore.UnitOfWork;
 using NLayerRepository;
 using NLayerRepository.Repositories;
 using NLayerRepository.UnitOfWork;
+using NLayerService.Mapping;
+using NLayerService.Services;
 using System.Reflection;
+using AutoMapper;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +20,9 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped(typeof(IService<>),typeof(Service<>));
+builder.Services.AddAutoMapper(typeof(MapProfile));
+
 
 //Aşagıdaki 7 satırlık olan kod ile migration yapılacak database yolunu ve hangi solution dan yapacagını vermiş olduk.
 /*builder.Services.AddDbContext<AppDbContext>(x=>//Bu satırda hangi class dan alacagımı belirledik.
