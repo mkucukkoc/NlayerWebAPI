@@ -24,14 +24,10 @@ builder.Services.AddControllers().AddFluentValidation(x=>x.RegisterValidatorsFro
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 //Aşagıdaki addmemorycache ile Caching katmanındaki sınıfı aktif ediyoruz.
 builder.Services.AddMemoryCache();
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
-
 builder.Services.AddAutoMapper(typeof(MapProfile));
-
-
 //Aşagıdaki 7 satırlık olan kod ile migration yapılacak database yolunu ve hangi solution dan yapacagını vermiş olduk.
 /*builder.Services.AddDbContext<AppDbContext>(x=>//Bu satırda hangi class dan alacagımı belirledik.
 {
