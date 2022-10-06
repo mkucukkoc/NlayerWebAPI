@@ -2,6 +2,7 @@
 using NLayerCore.Repositories;
 using NLayerCore.Servicess;
 using NLayerCore.UnitOfWork;
+using NLayerService.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -48,10 +49,13 @@ namespace NLayerService.Services
 
         public async Task<T> GetByIdAsync(int id)
         {
+
+            //Yazdığımız Not found exception kullanarak null dönerse kontrol ediyoruz.ve 404 hatası veriyoruz.
+            //bu kontrol işlemini service katmanında yapmamız lazım.
            var has=await _repository.GetByIdAsync(id);
             if (has==null)
             {
-                
+                throw new NotFoundException($"{typeof(T).Name}({id} Not Found)");
             }
             return has;
         }

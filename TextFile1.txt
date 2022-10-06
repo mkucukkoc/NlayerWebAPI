@@ -38,3 +38,26 @@ Bu durumlar Success,Warning gibi ks??mlar
 [JsonIgnore] Nedir?
 Bu özelli?i StatusCode için CustomResponseDto s?n?f?nda kulland?k.Bu özellik bize JSON verisinde gözükmesi 
 istenmeyen anahtarlar özel olarak belirtmek istenirse kullan?l?r.
+
+Filters Nedir?
+Controller içindeki metotlar çal??madan önce veya çal??t?ktan sonra i?lemleri yapmadan önce kontrol etmemizi sa?lar.
+
+Exception Nedir?
+Exceptionlar metotun içinde çali?ir.Filters'dan fark? budur.Exceptionlar daha çok service katman?nda kullan?r?z.Filters ise controller da kullan?l?r.
+
+MiddleWares Nedir?
+Uygulamada bir hata f?rlat?ld?g?nda bu hataya yakalamaz? sa?lar ve biz middlewares ile hatalar? önceden yakalay?p exceptionlar? kendimiz
+dönmemiz saglar.Middleware ile eger bir api uygulamas?n? kontrol edersek response yani 404,201 vb.?eyler.Eger bir MVC(wEB) UYGULAMASI
+ise bir sayfa(4004 sayfas? gibi) dönebiliriz.
+
+AutoFac Nedir?
+.NET tabanl? framework için geli?tirilmi? IOC (Inversion Of Control) container’d?r. S?n?flar birbirleriyle etkile?ime girdi?inde ,
+boyut ve karma??kl?k bak?m?ndan büyüdükçe uygulamalar?n daha esnek kalmas? için aralar?ndaki ba??ml?l?klar? yönetir. 
+Sadece ba??ml?l?klar? yönetmekle kalmaz uygulamalar?m?z? modüler bir yap?ya dönü?türmek için de oldukça faydal? kendisi.
+Örnek olarak;program.cs dosyas?ndaki e?le?tirmeler yapt?g?m?zda bu s?n?f e?le?tirmeleri artarsa bunlar? daha aza indirmek için kullan?l?r.
+API içindeki Modules klasöründeki ReposerviceModule s?n?f?d?r.
+
+Caching Katman? Nedir?
+Caching katman? bize verileri ön bellekte tutmam?z? ve bu verileri ön bellekte tutarak h?zl?ca getirmemize olanak sa?lar.
+Diyelim ki progarm?m?z 10 dakika çali?açak ve biz bu 10 dakika da verileri ön bellekte tutuyoruz ve bu 10 dakika içinde istedi?imi?z zaman
+çag?rabiliyoruz ve h?zl?ca getiriyor.

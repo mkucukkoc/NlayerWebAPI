@@ -11,6 +11,10 @@ using System.Reflection;
 using AutoMapper;
 using FluentValidation.AspNetCore;
 using NLayerService.Validations;
+using NlayerAPI.Middlewares;
+using NlayerAPI.Filters;
+using Autofac;
+using NlayerAPI.Modules;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,14 +25,9 @@ builder.Services.AddControllers().AddFluentValidation(x=>x.RegisterValidatorsFro
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IProductService, ProductService>();
 
-builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
-builder.Services.AddScoped<ICategoryService, CategoryService>();
-builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
-builder.Services.AddScoped(typeof(IService<>),typeof(Service<>));
+builder.Services.AddScoped(typeof(NotFoundFilter<>));
+
 builder.Services.AddAutoMapper(typeof(MapProfile));
 
 
@@ -44,9 +43,9 @@ builder.Services.AddAutoMapper(typeof(MapProfile));
 builder.Services.AddDbContext<AppDbContext>(
     opt => opt.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection"))
     );
+builder.Host.ConfigureContainer<ContainerBuilder>(containerBuilder => containerBuilder.RegisterModule(new RepoServiceModule()));
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
@@ -55,7 +54,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-
+app.UserCustomException();
 app.UseAuthorization();
 
 app.MapControllers();

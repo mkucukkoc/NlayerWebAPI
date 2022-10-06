@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "AytdvuU6uNIBao/1FymBoXqeDLKBuU6u+VxVEc12sA5rj8wVYb0+7Oxm//7SBb0hm/bkChzzf1t2BN4M67oFUA==",
+  "dgSpecHash": "YwcVNrP1bkipm/PvF8/5qfvpx51B84VbcwfZFy/xI48SISZQUjc1GlkAh/X5oxYWesQHGc5vjP6NPOYKvg4iwQ==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\NlayerWebAPI\\NlayerAPI\\NlayerAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\autofac\\6.0.0\\autofac.6.0.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\autofac.extensions.dependencyinjection\\7.2.0\\autofac.extensions.dependencyinjection.7.2.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
