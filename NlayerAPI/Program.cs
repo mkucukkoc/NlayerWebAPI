@@ -25,7 +25,8 @@ builder.Services.AddControllers().AddFluentValidation(x=>x.RegisterValidatorsFro
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-
+//Aşagıdaki addmemorycache ile Caching katmanındaki sınıfı aktif ediyoruz.
+builder.Services.AddMemoryCache();
 builder.Services.AddScoped(typeof(NotFoundFilter<>));
 
 builder.Services.AddAutoMapper(typeof(MapProfile));
