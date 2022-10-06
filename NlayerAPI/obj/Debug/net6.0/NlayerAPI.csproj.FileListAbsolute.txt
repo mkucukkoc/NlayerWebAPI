@@ -91,3 +91,6 @@ C:\Users\mustafakucukkoc\source\repos\NlayerWebAPI\NlayerAPI\obj\Debug\net6.0\re
 \\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
 \\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\AutoMapper.dll
 \\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+\\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\FluentValidation.dll
+\\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+\\Mac\Home\Desktop\NlayerWebAPI\NlayerAPI\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll

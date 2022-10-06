@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "qoCxpM7BYgjpS4F4uLlsZ+Pe4iozm0nIdTO5GFGYkaoXFu/8pm4Oi+mRPigEuNoZznBkLeb6io+PicacZ0PeoQ==",
+  "dgSpecHash": "AytdvuU6uNIBao/1FymBoXqeDLKBuU6u+VxVEc12sA5rj8wVYb0+7Oxm//7SBb0hm/bkChzzf1t2BN4M67oFUA==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\NlayerWebAPI\\NlayerAPI\\NlayerAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.0\\fluentvalidation.aspnetcore.11.2.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.aspnetcore.hosting.abstractions\\1.0.0\\microsoft.aspnetcore.hosting.abstractions.1.0.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.aspnetcore.hosting.server.abstractions\\1.0.0\\microsoft.aspnetcore.hosting.server.abstractions.1.0.0.nupkg.sha512",

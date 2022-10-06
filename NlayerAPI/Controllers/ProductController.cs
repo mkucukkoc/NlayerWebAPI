@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using NLayerCore.DTOs;
 using NLayerCore.Modelss;
 using NLayerCore.Servicess;
+using System.Collections.Concurrent;
 
 namespace NlayerAPI.Controllers
 {
@@ -11,9 +12,9 @@ namespace NlayerAPI.Controllers
     public class ProductController : CustomeBaseController
     {
         private readonly IMapper _mapper;
-        private readonly IService<Product> _service;
+        private readonly IProductService _service;
 
-        public ProductController(IMapper mapper, IService<Product> service)
+        public ProductController(IMapper mapper, IProductService service)
         {
             _mapper = mapper;
             _service = service;
@@ -25,7 +26,12 @@ namespace NlayerAPI.Controllers
             var productsDto = _mapper.Map<List<ProductDto>>(products);
             return CreateActionResult(CustomResponseDto<List<ProductDto>>.Success(200, productsDto));
         }
-        [HttpGet("{id}")]
+        [HttpGet("[action]")]
+        public async Task<IActionResult> GetProductWithCategory()
+        {
+            return CreateActionResult(await _service.GetProductWithCategory());
+        }
+         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
         {
             var products = await _service.GetByIdAsync(id);

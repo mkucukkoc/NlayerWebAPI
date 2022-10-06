@@ -1,10 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "Be3tbDFY2r7FvmPz+rz1GN1+3bAHV9g2KMW5810e5C3wgB+//Uo+1MERF8+wDrXQ7R9HRleX4QSAj6QenV/0gg==",
+  "dgSpecHash": "D1X2rPnhiKbNuGobSPmJSq88oHOTL1sWFiXMeLyw9kxleVhDHpMAkloJXUk8ACoOg+ThFYHrq+hxXYoonSyGvw==",
   "success": true,
   "projectFilePath": "\\\\Mac\\Home\\Desktop\\NlayerWebAPI\\NLayerCaching\\NLayerCaching.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation\\11.2.0\\fluentvalidation.11.2.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.2.0\\fluentvalidation.aspnetcore.11.2.0.nupkg.sha512",
+    "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.4\\microsoft.entityframeworkcore.6.0.4.nupkg.sha512",
     "C:\\Users\\mustafakucukkoc\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.4\\microsoft.entityframeworkcore.abstractions.6.0.4.nupkg.sha512",
